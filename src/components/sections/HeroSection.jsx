@@ -220,47 +220,19 @@ const HeroSection = () => {
 
                 </motion.div>
                 {/*Tech Stack - Mobile */}
-                <motion.div
-                variants={itemVariants}
-                className="flex justify-center items-center space-x-6 text-x5 uppercase tracking-widest flex-wrap"
-                >
-                    <span
-                    className={isDarkMode ?"text-gray-600":"text-gray-500"}
-                    >
-                        React
-                    </span>
-                    <span
-                    className={isDarkMode ?"text-gray-700":"text-gray-400"}
-                    >
-                        .
-                    </span>
-                    <span
-                    className={isDarkMode ?"text-gray-600":"text-gray-500"}
-                    >
-                        Node.js
-                    </span>
-                    <span
-                    className={isDarkMode?"text-gray-700":"text-gray-400"}
-                    >
-                        .
-                    </span>
-                    <span
-                    className={isDarkMode?"text-gray-600":"text-gray-500"}
-                    >
-                        TypeScript
-                    </span>
-                    <span
-                    className={isDarkMode ?"text-gray-700":"text-gray-400"}
-                    >
-                        .
-                    </span>
-                    <span
-                    className={isDarkMode?"text-gray-600":"text-gray-500"}
-                    >
-                        MongoDB
-                    </span>
-                    
-                </motion.div>
+               <motion.div
+  variants={itemVariants}
+  className="flex justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm md:text-base uppercase tracking-widest flex-wrap text-center"
+>
+  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>React</span>
+  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>◼</span>
+  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Node.js</span>
+  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>◼</span>
+  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>TypeScript</span>
+  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>◼</span>
+  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>MongoDB</span>
+</motion.div>
+
             </motion.div>
         </div>
         {/*Desktop Layout - Split*/}
@@ -375,7 +347,7 @@ className="flex justify-center lg:justify-end"
                 React
             </span>
             <span className={isDarkMode ? "text-gray-700":"text-gray-400"}>
-.
+◼
             </span>
             <span 
             className={isDarkMode ?"text-gray-600":"text-gray-500"}
@@ -383,7 +355,7 @@ className="flex justify-center lg:justify-end"
                 Node.js
             </span>
             <span className={isDarkMode ? "text-gray-700":"text-gray-400"}>
-.
+◼
             </span>
             <span 
             className={isDarkMode ?"text-gray-600":"text-gray-500"}
@@ -391,7 +363,7 @@ className="flex justify-center lg:justify-end"
                 TypeScript
             </span>
             <span className={isDarkMode ? "text-gray-700":"text-gray-400"}>
-.
+◼
             </span>
             <span 
             className={isDarkMode ?"text-gray-600":"text-gray-500"}
