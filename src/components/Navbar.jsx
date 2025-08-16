@@ -29,7 +29,14 @@ const Navbar = () => {
           className="flex items-center space-x-2"
         >
           <Code2 size={24} className="text-blue-500" />{" "}
-          <span className="text-lg m1-1">Vipin Tomar</span>
+         <span className={`text-lg ml-1 font-semibold ${
+  isDarkMode
+    ? "text-gray-100"  // light text for dark background
+    : "text-gray-900"  // dark text for light background
+}`}>
+  Vipin Tomar
+</span>
+
         </motion.div>
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
