@@ -61,6 +61,17 @@ import CERT_CODOLIO from "../assets/Certificates/1 in Sistec on codolio.png";
 import CERT_AI_COMBAT from "../assets/Certificates/Ai-prompt-combat-organizer.JPG";
 import CERT_GEN_AI from "../assets/Certificates/Gen-ai-felicitation.jpeg";
 import CERT_FRESHERS from "../assets/Certificates/Freshers_organizer.JPG";
+import CERT_APPLY_AI_1 from "../assets/Certificates/ApplyAIAnalyzeCustomerReviewsv220251228-32-6kacjb.pdf";
+import CERT_APPLY_AI_2 from "../assets/Certificates/Apply_AI-_Analyze_Customer_Reviews_certificate_vipintomar2507-gmail-com_ad91ecf1-3645-4c80-a896-371d7461d8e9.pdf";
+import CERT_GSA from "../assets/Certificates/GSA Completion.pdf";
+import CERT_INTRO_MODERN_AI_1 from "../assets/Certificates/Introduction_to_Modern_AI_certificate_vipintomar2507-gmail-com_4b2e1810-237d-4dbd-a951-4d895d6af3b2.pdf";
+import CERT_INTRO_MODERN_AI_2 from "../assets/Certificates/IntrotoModernAIUpdate20251228-31-uhtdjp.pdf";
+import CERT_JP_MORGAN from "../assets/Certificates/JP Morgan.pdf";
+import CERT_PROBLEM_SOLVING_C from "../assets/Certificates/Problem Solving through Programming in C.pdf";
+import CERT_PYTHON_CISCO_1 from "../assets/Certificates/Python Cisco.pdf";
+import CERT_PYTHON_CISCO_2 from "../assets/Certificates/Python Cisco 2.pdf";
+import CERT_PYTHON_ESSENTIALS_2 from "../assets/Certificates/PythonEssentials2Update20251228-31-wwmm6i.pdf";
+import CERT_JOY_COMPUTING_PYTHON from "../assets/Certificates/The Joy of Computing using Python.pdf";
 
 // Badge imports
 import BADGE_LEETCODE_2024_50 from "../assets/Badges/Leetcode/2024-50-lg.png";
@@ -73,6 +84,13 @@ import BADGE_LEETCODE_2025_5 from "../assets/Badges/Leetcode/lg202505.png";
 import BADGE_LEETCODE_2025_6 from "../assets/Badges/Leetcode/lg202506.png";
 import BADGE_LEETCODE_2025_7 from "../assets/Badges/Leetcode/lg202507.png";
 import BADGE_LEETCODE_2025_8 from "../assets/Badges/Leetcode/lg202508.png";
+import BADGE_LEETCODE_2025_9 from "../assets/Badges/Leetcode/lg202509.png";
+import BADGE_LEETCODE_2025_10 from "../assets/Badges/Leetcode/lg202510.png";
+import BADGE_LEETCODE_2025_GIF from "../assets/Badges/Leetcode/2025.gif";
+import BADGE_LEETCODE_2025_11 from "../assets/Badges/Leetcode/202511.gif";
+import BADGE_LEETCODE_2025_12 from "../assets/Badges/Leetcode/202512.gif";
+import BADGE_LEETCODE_365_NEW from "../assets/Badges/Leetcode/365_new.gif";
+import BADGE_LEETCODE_2026_1 from "../assets/Badges/Leetcode/dcc-2026-1.png";
 import BADGE_LEETCODE_200 from "../assets/Badges/Leetcode/200.gif";
 import BADGE_LEETCODE_25100 from "../assets/Badges/Leetcode/25100.gif";
 import BADGE_LEETCODE_202503 from "../assets/Badges/Leetcode/202503.gif";
@@ -126,6 +144,7 @@ import BADGE_CODECHEF_LEAGUE_4 from "../assets/Badges/Codechef/league-4.jpg";
 import BADGE_CODECHEF_LEAGUE_3 from "../assets/Badges/Codechef/league-3.jpg";
 import BADGE_CODECHEF_LEAGUE_2 from "../assets/Badges/Codechef/league-2.jpg";
 import BADGE_CODECHEF_LEAGUE_1 from "../assets/Badges/Codechef/league-1.jpg";
+import BADGE_CODECHEF_BADGE from "../assets/Badges/Codechef/CodeChefBadge.png";
 
 import BADGE_GEEKSFORGEEKS_1ST from "../assets/Badges/geeksforgeeks/1st in institute.png";
 
@@ -278,27 +297,76 @@ export const BADGES = {
             },
             {
                 id: 11,
+                name: "September 2025 Challenge",
+                image: BADGE_LEETCODE_2025_9,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 12,
+                name: "October 2025 Challenge",
+                image: BADGE_LEETCODE_2025_10,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 13,
+                name: "2025 Challenge",
+                image: BADGE_LEETCODE_2025_GIF,
+                description: "2025 LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 14,
+                name: "November 2025 Challenge",
+                image: BADGE_LEETCODE_2025_11,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 15,
+                name: "December 2025 Challenge",
+                image: BADGE_LEETCODE_2025_12,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 16,
+                name: "365 Days Challenge",
+                image: BADGE_LEETCODE_365_NEW,
+                description: "Completed 365 days of LeetCode challenges",
+                year: "2025"
+            },
+            {
+                id: 17,
+                name: "January 2026 Challenge",
+                image: BADGE_LEETCODE_2026_1,
+                description: "Monthly LeetCode challenge completion",
+                year: "2026"
+            },
+            {
+                id: 18,
                 name: "200 Problems Solved",
                 image: BADGE_LEETCODE_200,
                 description: "Solved 200+ problems on LeetCode",
                 year: "2024"
             },
             {
-                id: 12,
+                id: 19,
                 name: "25/100 Challenge",
                 image: BADGE_LEETCODE_25100,
                 description: "Completed 25/100 days challenge",
                 year: "2024"
             },
             {
-                id: 13,
+                id: 20,
                 name: "2025 March Challenge",
                 image: BADGE_LEETCODE_202503,
                 description: "March 2025 monthly challenge",
                 year: "2025"
             },
             {
-                id: 14,
+                id: 21,
                 name: "25/50 Challenge",
                 image: BADGE_LEETCODE_2550,
                 description: "Completed 25/50 days challenge",
@@ -556,6 +624,13 @@ export const BADGES = {
                 image: BADGE_CODECHEF_LEAGUE_1,
                 description: "League 1 ranking achievement",
                 year: "2023"
+            },
+            {
+                id: 13,
+                name: "CodeChef Badge",
+                image: BADGE_CODECHEF_BADGE,
+                description: "CodeChef achievement badge",
+                year: "2025"
             }
         ]
     },
@@ -1035,6 +1110,94 @@ export const ACHIEVEMENTS = [
         year: "2023",
         category: "Leadership",
         image: CERT_FRESHERS
+    },
+    {
+        id: 36,
+        title: "Apply AI: Analyze Customer Reviews",
+        description: "Completed Apply AI course on analyzing customer reviews using AI techniques",
+        year: "2025",
+        category: "Certification",
+        image: CERT_APPLY_AI_1
+    },
+    {
+        id: 37,
+        title: "Apply AI: Analyze Customer Reviews (Certificate)",
+        description: "Achieved certification in Apply AI program for customer review analysis",
+        year: "2025",
+        category: "Certification",
+        image: CERT_APPLY_AI_2
+    },
+    {
+        id: 38,
+        title: "GSA Completion",
+        description: "Successfully completed GSA program demonstrating commitment to professional development",
+        year: "2025",
+        category: "Certification",
+        image: CERT_GSA
+    },
+    {
+        id: 39,
+        title: "Introduction to Modern AI",
+        description: "Completed Introduction to Modern AI course covering fundamental AI concepts and applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_INTRO_MODERN_AI_1
+    },
+    {
+        id: 40,
+        title: "Introduction to Modern AI (Updated)",
+        description: "Completed updated Introduction to Modern AI program with latest AI technologies",
+        year: "2025",
+        category: "Certification",
+        image: CERT_INTRO_MODERN_AI_2
+    },
+    {
+        id: 41,
+        title: "JP Morgan Certification",
+        description: "Completed JP Morgan professional development program",
+        year: "2025",
+        category: "Certification",
+        image: CERT_JP_MORGAN
+    },
+    {
+        id: 42,
+        title: "Problem Solving through Programming in C",
+        description: "Achieved certification in problem-solving using C programming language",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PROBLEM_SOLVING_C
+    },
+    {
+        id: 43,
+        title: "Python Cisco Certification",
+        description: "Completed Cisco Python programming certification demonstrating networking and programming skills",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_CISCO_1
+    },
+    {
+        id: 44,
+        title: "Python Cisco Certification (Advanced)",
+        description: "Achieved advanced Python Cisco certification for advanced networking applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_CISCO_2
+    },
+    {
+        id: 45,
+        title: "Python Essentials 2",
+        description: "Completed Python Essentials 2 course covering advanced Python programming concepts",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_ESSENTIALS_2
+    },
+    {
+        id: 46,
+        title: "The Joy of Computing using Python",
+        description: "Completed The Joy of Computing course exploring Python programming fundamentals and applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_JOY_COMPUTING_PYTHON
     }
 ];
 
