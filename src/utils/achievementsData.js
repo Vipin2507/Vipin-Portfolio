@@ -1,0 +1,920 @@
+import CERT_GOOGLE from "../assets/Certificates/Google Solution Challenge.jpg";
+import CERT_GDG from "../assets/Certificates/GDG ON Campus.png";
+import CERT_BUILD_INDIA from "../assets/Certificates/Build with India.png";
+import CERT_HACK2SKILL from "../assets/Certificates/Hack2skill-Certificate.png";
+import CERT_AWS from "../assets/Certificates/AWS Virtual Internship.pdf";
+import CERT_DELOITTE from "../assets/Certificates/Deloitte Virtual Internship.pdf";
+import CERT_INFOSYS from "../assets/Certificates/Infoysis Front End Web Developer.pdf";
+import CERT_REACT from "../assets/Certificates/React_js.pdf";
+import CERT_TATA from "../assets/Certificates/Tata Gen AI Virtual Internship.pdf";
+import CERT_HACKERRANK_JAVA from "../assets/Certificates/Hackerrank Java.pdf";
+import CERT_HACKERRANK_SQL from "../assets/Certificates/Hackerrank SQL.pdf";
+import CERT_HACKERRANK_CSHARP from "../assets/Certificates/Hackerrank Chash.pdf";
+import CERT_HACKERRANK_PROBLEM_SOLVING from "../assets/Certificates/Hackerrank Problem Solving.pdf";
+import CERT_HACKERRANK_PYTHON from "../assets/Certificates/Hackerrank Python.pdf";
+import CERT_GDG_TECH from "../assets/Certificates/GDG Tech Winter Break.pdf";
+import CERT_GFG from "../assets/Certificates/GFG 160.pdf";
+import CERT_INFOSYS_JS from "../assets/Certificates/JavaScript Infoysis.pdf";
+import CERT_INFOSYS_CSS from "../assets/Certificates/CSS Infoysis.pdf";
+import CERT_INFOSYS_HTML from "../assets/Certificates/HTML Infoysis.pdf";
+import CERT_JAVA from "../assets/Certificates/Java.pdf";
+import CERT_DATA_SCIENCE from "../assets/Certificates/Data Science With Python.pdf";
+import CERT_MACHINE_LEARNING from "../assets/Certificates/Machine Learining With R Studio.pdf";
+import CERT_CSS_JS_PHP from "../assets/Certificates/CSS, JS and PHP.pdf";
+import CERT_HTML5_CSS3 from "../assets/Certificates/Html5 and CSS3.pdf";
+import CERT_JAVASCRIPT from "../assets/Certificates/JavaScript.pdf";
+import CERT_C_CPP_JAVA_PHP from "../assets/Certificates/C,C++,Java and PHP.pdf";
+import CERT_MLSA from "../assets/Certificates/MLSA Github Workshop.pdf";
+import CERT_SIH from "../assets/Certificates/SIH.pdf";
+import CERT_TYPING from "../assets/Certificates/Typing Certificate 1.pdf";
+import CERT_LEETCODE from "../assets/Certificates/Leetcode-365days-challenge.png";
+import CERT_SUPER50 from "../assets/Certificates/Super-50_Member.JPG";
+import CERT_CODOLIO from "../assets/Certificates/1 in Sistec on codolio.png";
+import CERT_AI_COMBAT from "../assets/Certificates/Ai-prompt-combat-organizer.JPG";
+import CERT_GEN_AI from "../assets/Certificates/Gen-ai-felicitation.jpeg";
+import CERT_FRESHERS from "../assets/Certificates/Freshers_organizer.JPG";
+import CERT_APPLY_AI_1 from "../assets/Certificates/ApplyAIAnalyzeCustomerReviewsv220251228-32-6kacjb.pdf";
+import CERT_APPLY_AI_2 from "../assets/Certificates/Apply_AI-_Analyze_Customer_Reviews_certificate_vipintomar2507-gmail-com_ad91ecf1-3645-4c80-a896-371d7461d8e9.pdf";
+import CERT_GSA from "../assets/Certificates/GSA Completion.pdf";
+import CERT_INTRO_MODERN_AI_1 from "../assets/Certificates/Introduction_to_Modern_AI_certificate_vipintomar2507-gmail-com_4b2e1810-237d-4dbd-a951-4d895d6af3b2.pdf";
+import CERT_INTRO_MODERN_AI_2 from "../assets/Certificates/IntrotoModernAIUpdate20251228-31-uhtdjp.pdf";
+import CERT_JP_MORGAN from "../assets/Certificates/JP Morgan.pdf";
+import CERT_PROBLEM_SOLVING_C from "../assets/Certificates/Problem Solving through Programming in C.pdf";
+import CERT_PYTHON_CISCO_1 from "../assets/Certificates/Python Cisco.pdf";
+import CERT_PYTHON_CISCO_2 from "../assets/Certificates/Python Cisco 2.pdf";
+import CERT_PYTHON_ESSENTIALS_2 from "../assets/Certificates/PythonEssentials2Update20251228-31-wwmm6i.pdf";
+import CERT_JOY_COMPUTING_PYTHON from "../assets/Certificates/The Joy of Computing using Python.pdf";
+
+// Badge imports
+import BADGE_LEETCODE_2024_50 from "../assets/Badges/Leetcode/2024-50-lg.png";
+import BADGE_LEETCODE_2024_11 from "../assets/Badges/Leetcode/dcc-2024-11.png";
+import BADGE_LEETCODE_2024_12 from "../assets/Badges/Leetcode/dcc-2024-12.png";
+import BADGE_LEETCODE_2025_1 from "../assets/Badges/Leetcode/dcc-2025-1.png";
+import BADGE_LEETCODE_2025_2 from "../assets/Badges/Leetcode/dcc-2025-2.png";
+import BADGE_LEETCODE_2025_4 from "../assets/Badges/Leetcode/dcc-2025-4.png";
+import BADGE_LEETCODE_2025_5 from "../assets/Badges/Leetcode/lg202505.png";
+import BADGE_LEETCODE_2025_6 from "../assets/Badges/Leetcode/lg202506.png";
+import BADGE_LEETCODE_2025_7 from "../assets/Badges/Leetcode/lg202507.png";
+import BADGE_LEETCODE_2025_8 from "../assets/Badges/Leetcode/lg202508.png";
+import BADGE_LEETCODE_2025_9 from "../assets/Badges/Leetcode/lg202509.png";
+import BADGE_LEETCODE_2025_10 from "../assets/Badges/Leetcode/lg202510.png";
+import BADGE_LEETCODE_2025_GIF from "../assets/Badges/Leetcode/2025.gif";
+import BADGE_LEETCODE_2025_11 from "../assets/Badges/Leetcode/202511.gif";
+import BADGE_LEETCODE_2025_12 from "../assets/Badges/Leetcode/202512.gif";
+import BADGE_LEETCODE_365_NEW from "../assets/Badges/Leetcode/365_new.gif";
+import BADGE_LEETCODE_2026_1 from "../assets/Badges/Leetcode/dcc-2026-1.png";
+import BADGE_LEETCODE_200 from "../assets/Badges/Leetcode/200.gif";
+import BADGE_LEETCODE_25100 from "../assets/Badges/Leetcode/25100.gif";
+import BADGE_LEETCODE_202503 from "../assets/Badges/Leetcode/202503.gif";
+import BADGE_LEETCODE_2550 from "../assets/Badges/Leetcode/2550.gif";
+
+import BADGE_HACKERRANK_CPP from "../assets/Badges/HackerRank/C++.png";
+import BADGE_HACKERRANK_JAVA from "../assets/Badges/HackerRank/Java.png";
+import BADGE_HACKERRANK_PYTHON from "../assets/Badges/HackerRank/Python.png";
+import BADGE_HACKERRANK_C from "../assets/Badges/HackerRank/C-language.png";
+
+import BADGE_HACKEREARTH_LEGEND from "../assets/Badges/Hackerearth/Legend.png";
+import BADGE_HACKEREARTH_MASTER from "../assets/Badges/Hackerearth/Master.png";
+import BADGE_HACKEREARTH_ELITE from "../assets/Badges/Hackerearth/Elite.png";
+import BADGE_HACKEREARTH_EXPLORER from "../assets/Badges/Hackerearth/Explorer.png";
+import BADGE_HACKEREARTH_AMATEUR from "../assets/Badges/Hackerearth/Amateur.png";
+import BADGE_HACKEREARTH_NOVICE from "../assets/Badges/Hackerearth/Novice.png";
+import BADGE_HACKEREARTH_ALGORITHMS_6 from "../assets/Badges/Hackerearth/algorithms_6.png";
+import BADGE_HACKEREARTH_ALGORITHMS_5 from "../assets/Badges/Hackerearth/algorithms_5.png";
+import BADGE_HACKEREARTH_ALGORITHMS_4 from "../assets/Badges/Hackerearth/algorithms_4.png";
+import BADGE_HACKEREARTH_ALGORITHMS_3 from "../assets/Badges/Hackerearth/algorithms_3.png";
+import BADGE_HACKEREARTH_ALGORITHMS_2 from "../assets/Badges/Hackerearth/algorithms_2.png";
+import BADGE_HACKEREARTH_DATA_STRUCTURES_5 from "../assets/Badges/Hackerearth/data_structures_5.png";
+import BADGE_HACKEREARTH_DATA_STRUCTURES_4 from "../assets/Badges/Hackerearth/data_structures_4.png";
+import BADGE_HACKEREARTH_DATA_STRUCTURES_3 from "../assets/Badges/Hackerearth/data_structures_3.png";
+import BADGE_HACKEREARTH_DATA_STRUCTURES_2 from "../assets/Badges/Hackerearth/data_structures_2.png";
+import BADGE_HACKEREARTH_DATA_STRUCTURES_1 from "../assets/Badges/Hackerearth/data_structures_1.png";
+import BADGE_HACKEREARTH_MATH_4 from "../assets/Badges/Hackerearth/math_4.png";
+import BADGE_HACKEREARTH_MATH_3 from "../assets/Badges/Hackerearth/math_3.png";
+import BADGE_HACKEREARTH_MATH_2 from "../assets/Badges/Hackerearth/math_2.png";
+import BADGE_HACKEREARTH_BASIC_PROGRAMMING_4 from "../assets/Badges/Hackerearth/basic_programming_4.png";
+import BADGE_HACKEREARTH_BASIC_PROGRAMMING_3 from "../assets/Badges/Hackerearth/basic_programming_3.png";
+import BADGE_HACKEREARTH_BASIC_PROGRAMMING_2 from "../assets/Badges/Hackerearth/basic_programming_2.png";
+import BADGE_HACKEREARTH_BASIC_PROGRAMMING_1 from "../assets/Badges/Hackerearth/basic_programming_1.png";
+import BADGE_HACKEREARTH_PYTHON_1 from "../assets/Badges/Hackerearth/python_1.png";
+import BADGE_HACKEREARTH_JAVA_1 from "../assets/Badges/Hackerearth/java_1.png";
+import BADGE_HACKEREARTH_C_1 from "../assets/Badges/Hackerearth/c_1.png";
+import BADGE_HACKEREARTH_CPP_1 from "../assets/Badges/Hackerearth/cpp_1.png";
+import BADGE_HACKEREARTH_THIRD from "../assets/Badges/Hackerearth/third_badge.png";
+import BADGE_HACKEREARTH_SECOND from "../assets/Badges/Hackerearth/second_badge.png";
+import BADGE_HACKEREARTH_FIRST from "../assets/Badges/Hackerearth/first_badge.png";
+
+import BADGE_CODECHEF_DIAMOND from "../assets/Badges/Codechef/Diamond Badge.png";
+import BADGE_CODECHEF_GOLD from "../assets/Badges/Codechef/Gold Badge.png";
+import BADGE_CODECHEF_SILVER from "../assets/Badges/Codechef/Silver Badge.png";
+import BADGE_CODECHEF_BRONZE from "../assets/Badges/Codechef/Bronze Badge.png";
+import BADGE_CODECHEF_500 from "../assets/Badges/Codechef/500 Problems.png";
+import BADGE_CODECHEF_250 from "../assets/Badges/Codechef/250 Problems.png";
+import BADGE_CODECHEF_50 from "../assets/Badges/Codechef/50 Problems.png";
+import BADGE_CODECHEF_LEAGUE_5 from "../assets/Badges/Codechef/league-5.jpg";
+import BADGE_CODECHEF_LEAGUE_4 from "../assets/Badges/Codechef/league-4.jpg";
+import BADGE_CODECHEF_LEAGUE_3 from "../assets/Badges/Codechef/league-3.jpg";
+import BADGE_CODECHEF_LEAGUE_2 from "../assets/Badges/Codechef/league-2.jpg";
+import BADGE_CODECHEF_LEAGUE_1 from "../assets/Badges/Codechef/league-1.jpg";
+import BADGE_CODECHEF_BADGE from "../assets/Badges/Codechef/CodeChefBadge.png";
+
+import BADGE_GEEKSFORGEEKS_1ST from "../assets/Badges/geeksforgeeks/1st in institute.png";
+
+export const BADGES = {
+    leetcode: {
+        profileUrl: "https://leetcode.com/u/Vipin__Tomar/",
+        badges: [
+            {
+                id: 1,
+                name: "2024 50 Days Challenge",
+                image: BADGE_LEETCODE_2024_50,
+                description: "Completed 50 days of LeetCode challenges",
+                year: "2024"
+            },
+            {
+                id: 2,
+                name: "December 2024 Challenge",
+                image: BADGE_LEETCODE_2024_12,
+                description: "Monthly LeetCode challenge completion",
+                year: "2024"
+            },
+            {
+                id: 3,
+                name: "November 2024 Challenge",
+                image: BADGE_LEETCODE_2024_11,
+                description: "Monthly LeetCode challenge completion",
+                year: "2024"
+            },
+            {
+                id: 4,
+                name: "January 2025 Challenge",
+                image: BADGE_LEETCODE_2025_1,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 5,
+                name: "February 2025 Challenge",
+                image: BADGE_LEETCODE_2025_2,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 6,
+                name: "April 2025 Challenge",
+                image: BADGE_LEETCODE_2025_4,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 7,
+                name: "May 2025 Challenge",
+                image: BADGE_LEETCODE_2025_5,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 8,
+                name: "June 2025 Challenge",
+                image: BADGE_LEETCODE_2025_6,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 9,
+                name: "July 2025 Challenge",
+                image: BADGE_LEETCODE_2025_7,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 10,
+                name: "August 2025 Challenge",
+                image: BADGE_LEETCODE_2025_8,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 11,
+                name: "September 2025 Challenge",
+                image: BADGE_LEETCODE_2025_9,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 12,
+                name: "October 2025 Challenge",
+                image: BADGE_LEETCODE_2025_10,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 13,
+                name: "2025 Challenge",
+                image: BADGE_LEETCODE_2025_GIF,
+                description: "2025 LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 14,
+                name: "November 2025 Challenge",
+                image: BADGE_LEETCODE_2025_11,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 15,
+                name: "December 2025 Challenge",
+                image: BADGE_LEETCODE_2025_12,
+                description: "Monthly LeetCode challenge completion",
+                year: "2025"
+            },
+            {
+                id: 16,
+                name: "365 Days Challenge",
+                image: BADGE_LEETCODE_365_NEW,
+                description: "Completed 365 days of LeetCode challenges",
+                year: "2025"
+            },
+            {
+                id: 17,
+                name: "January 2026 Challenge",
+                image: BADGE_LEETCODE_2026_1,
+                description: "Monthly LeetCode challenge completion",
+                year: "2026"
+            },
+            {
+                id: 18,
+                name: "200 Problems Solved",
+                image: BADGE_LEETCODE_200,
+                description: "Solved 200+ problems on LeetCode",
+                year: "2024"
+            },
+            {
+                id: 19,
+                name: "25/100 Challenge",
+                image: BADGE_LEETCODE_25100,
+                description: "Completed 25/100 days challenge",
+                year: "2024"
+            },
+            {
+                id: 20,
+                name: "2025 March Challenge",
+                image: BADGE_LEETCODE_202503,
+                description: "March 2025 monthly challenge",
+                year: "2025"
+            },
+            {
+                id: 21,
+                name: "25/50 Challenge",
+                image: BADGE_LEETCODE_2550,
+                description: "Completed 25/50 days challenge",
+                year: "2024"
+            }
+        ]
+    },
+    hackerrank: {
+        profileUrl: "https://www.hackerrank.com/profile/Vipin2507",
+        badges: [
+            {
+                id: 1,
+                name: "C++ Programming",
+                image: BADGE_HACKERRANK_CPP,
+                description: "C++ programming language proficiency",
+                year: "2023"
+            },
+            {
+                id: 2,
+                name: "Java Programming",
+                image: BADGE_HACKERRANK_JAVA,
+                description: "Java programming language expertise",
+                year: "2023"
+            },
+            {
+                id: 3,
+                name: "Python Programming",
+                image: BADGE_HACKERRANK_PYTHON,
+                description: "Python programming language mastery",
+                year: "2023"
+            },
+            {
+                id: 4,
+                name: "C Programming",
+                image: BADGE_HACKERRANK_C,
+                description: "C programming language skills",
+                year: "2023"
+            }
+        ]
+    },
+    hackerearth: {
+        profileUrl: "https://www.hackerearth.com/@vipintomar2507/",
+        badges: [
+            {
+                id: 1,
+                name: "Legend Badge",
+                image: BADGE_HACKEREARTH_LEGEND,
+                description: "Highest achievement level on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 2,
+                name: "Master Badge",
+                image: BADGE_HACKEREARTH_MASTER,
+                description: "Advanced level achievement on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 3,
+                name: "Elite Badge",
+                image: BADGE_HACKEREARTH_ELITE,
+                description: "Elite level performance on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 4,
+                name: "Explorer Badge",
+                image: BADGE_HACKEREARTH_EXPLORER,
+                description: "Explorer level achievement on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 5,
+                name: "Amateur Badge",
+                image: BADGE_HACKEREARTH_AMATEUR,
+                description: "Amateur level achievement on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 6,
+                name: "Novice Badge",
+                image: BADGE_HACKEREARTH_NOVICE,
+                description: "Novice level achievement on HackerEarth",
+                year: "2023"
+            },
+            {
+                id: 7,
+                name: "Algorithms Level 6",
+                image: BADGE_HACKEREARTH_ALGORITHMS_6,
+                description: "Advanced algorithms proficiency",
+                year: "2023"
+            },
+            {
+                id: 8,
+                name: "Algorithms Level 5",
+                image: BADGE_HACKEREARTH_ALGORITHMS_5,
+                description: "Expert algorithms skills",
+                year: "2023"
+            },
+            {
+                id: 9,
+                name: "Data Structures Level 5",
+                image: BADGE_HACKEREARTH_DATA_STRUCTURES_5,
+                description: "Advanced data structures knowledge",
+                year: "2023"
+            },
+            {
+                id: 10,
+                name: "Math Level 4",
+                image: BADGE_HACKEREARTH_MATH_4,
+                description: "High-level mathematical skills",
+                year: "2023"
+            },
+            {
+                id: 11,
+                name: "Basic Programming Level 4",
+                image: BADGE_HACKEREARTH_BASIC_PROGRAMMING_4,
+                description: "Advanced programming fundamentals",
+                year: "2023"
+            },
+            {
+                id: 12,
+                name: "Python Level 1",
+                image: BADGE_HACKEREARTH_PYTHON_1,
+                description: "Python programming certification",
+                year: "2023"
+            },
+            {
+                id: 13,
+                name: "Java Level 1",
+                image: BADGE_HACKEREARTH_JAVA_1,
+                description: "Java programming certification",
+                year: "2023"
+            },
+            {
+                id: 14,
+                name: "C Level 1",
+                image: BADGE_HACKEREARTH_C_1,
+                description: "C programming certification",
+                year: "2023"
+            },
+            {
+                id: 15,
+                name: "C++ Level 1",
+                image: BADGE_HACKEREARTH_CPP_1,
+                description: "C++ programming certification",
+                year: "2023"
+            },
+            {
+                id: 16,
+                name: "Third Place Badge",
+                image: BADGE_HACKEREARTH_THIRD,
+                description: "Third place achievement in competition",
+                year: "2023"
+            },
+            {
+                id: 17,
+                name: "Second Place Badge",
+                image: BADGE_HACKEREARTH_SECOND,
+                description: "Second place achievement in competition",
+                year: "2023"
+            },
+            {
+                id: 18,
+                name: "First Place Badge",
+                image: BADGE_HACKEREARTH_FIRST,
+                description: "First place achievement in competition",
+                year: "2023"
+            }
+        ]
+    },
+    codechef: {
+        profileUrl: "https://www.codechef.com/users/vipin07tomar",
+        badges: [
+            {
+                id: 1,
+                name: "Diamond Badge",
+                image: BADGE_CODECHEF_DIAMOND,
+                description: "Highest ranking badge on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 2,
+                name: "Gold Badge",
+                image: BADGE_CODECHEF_GOLD,
+                description: "Gold level ranking on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 3,
+                name: "Silver Badge",
+                image: BADGE_CODECHEF_SILVER,
+                description: "Silver level ranking on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 4,
+                name: "Bronze Badge",
+                image: BADGE_CODECHEF_BRONZE,
+                description: "Bronze level ranking on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 5,
+                name: "500 Problems Solved",
+                image: BADGE_CODECHEF_500,
+                description: "Solved 500+ problems on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 6,
+                name: "250 Problems Solved",
+                image: BADGE_CODECHEF_250,
+                description: "Solved 250+ problems on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 7,
+                name: "50 Problems Solved",
+                image: BADGE_CODECHEF_50,
+                description: "Solved 50+ problems on CodeChef",
+                year: "2023"
+            },
+            {
+                id: 8,
+                name: "League 5",
+                image: BADGE_CODECHEF_LEAGUE_5,
+                description: "League 5 ranking achievement",
+                year: "2023"
+            },
+            {
+                id: 9,
+                name: "League 4",
+                image: BADGE_CODECHEF_LEAGUE_4,
+                description: "League 4 ranking achievement",
+                year: "2023"
+            },
+            {
+                id: 10,
+                name: "League 3",
+                image: BADGE_CODECHEF_LEAGUE_3,
+                description: "League 3 ranking achievement",
+                year: "2023"
+            },
+            {
+                id: 11,
+                name: "League 2",
+                image: BADGE_CODECHEF_LEAGUE_2,
+                description: "League 2 ranking achievement",
+                year: "2023"
+            },
+            {
+                id: 12,
+                name: "League 1",
+                image: BADGE_CODECHEF_LEAGUE_1,
+                description: "League 1 ranking achievement",
+                year: "2023"
+            },
+            {
+                id: 13,
+                name: "CodeChef Badge",
+                image: BADGE_CODECHEF_BADGE,
+                description: "CodeChef achievement badge",
+                year: "2025"
+            }
+        ]
+    },
+    geeksforgeeks: {
+        profileUrl: "https://www.geeksforgeeks.org/user/vipintomar/",
+        badges: [
+            {
+                id: 1,
+                name: "1st in Institute",
+                image: BADGE_GEEKSFORGEEKS_1ST,
+                description: "Top ranking in institute on GeeksforGeeks",
+                year: "2023"
+            }
+        ]
+    }
+};
+
+
+export const ACHIEVEMENTS = [
+    {
+        id: 1,
+        title: "Google Solution Challenge Winner",
+        description: "Won Google Solution Challenge for innovative tech solutions addressing real-world problems",
+        year: "2023",
+        category: "Competition",
+        image: CERT_GOOGLE
+    },
+    {
+        id: 2,
+        title: "GDG Campus Lead",
+        description: "Selected as Google Developer Group Campus Lead for organizing tech events and workshops",
+        year: "2023",
+        category: "Leadership",
+        image: CERT_GDG
+    },
+    {
+        id: 3,
+        title: "Build with India Finalist",
+        description: "Reached finals in Build with India hackathon for sustainable development solutions",
+        year: "2023",
+        category: "Competition",
+        image: CERT_BUILD_INDIA
+    },
+    {
+        id: 4,
+        title: "Hack2Skill Winner",
+        description: "First place in Hack2Skill hackathon for innovative web application development",
+        year: "2023",
+        category: "Competition",
+        image: CERT_HACK2SKILL
+    },
+    {
+        id: 5,
+        title: "Tata Gen AI Virtual Internship",
+        description: "Completed Tata's Generative AI Virtual Internship program exploring cutting-edge AI technologies",
+        year: "2023",
+        category: "Certification",
+        image: CERT_TATA
+    },
+    {
+        id: 6,
+        title: "HackerRank Java Certification",
+        description: "Achieved HackerRank Java certification demonstrating proficiency in Java programming",
+        year: "2023",
+        category: "Certification",
+        image: CERT_HACKERRANK_JAVA
+    },
+    {
+        id: 7,
+        title: "HackerRank SQL Certification",
+        description: "Earned HackerRank SQL certification showcasing database query and management skills",
+        year: "2023",
+        category: "Certification",
+        image: CERT_HACKERRANK_SQL
+    },
+    {
+        id: 8,
+        title: "HackerRank C# Certification",
+        description: "Obtained HackerRank C# certification proving expertise in C# development",
+        year: "2023",
+        category: "Certification",
+        image: CERT_HACKERRANK_CSHARP
+    },
+    {
+        id: 9,
+        title: "HackerRank Problem Solving",
+        description: "Certified in HackerRank Problem Solving demonstrating strong algorithmic thinking",
+        year: "2023",
+        category: "Certification",
+        image: CERT_HACKERRANK_PROBLEM_SOLVING
+    },
+    {
+        id: 10,
+        title: "HackerRank Python Certification",
+        description: "Achieved HackerRank Python certification showcasing Python programming expertise",
+        year: "2023",
+        category: "Certification",
+        image: CERT_HACKERRANK_PYTHON
+    },
+    {
+        id: 11,
+        title: "GDG Tech Winter Break",
+        description: "Completed GDG Tech Winter Break program focusing on advanced development skills",
+        year: "2023",
+        category: "Certification",
+        image: CERT_GDG_TECH
+    },
+    {
+        id: 12,
+        title: "GFG 160 Problem Solving",
+        description: "Solved 160+ problems on GeeksforGeeks demonstrating strong coding fundamentals",
+        year: "2023",
+        category: "Competition",
+        image: CERT_GFG
+    },
+    {
+        id: 13,
+        title: "Infosys JavaScript Certification",
+        description: "Certified in JavaScript through Infosys comprehensive training program",
+        year: "2022",
+        category: "Certification",
+        image: CERT_INFOSYS_JS
+    },
+    {
+        id: 14,
+        title: "Infosys CSS Certification",
+        description: "Achieved CSS certification through Infosys styling and design training",
+        year: "2022",
+        category: "Certification",
+        image: CERT_INFOSYS_CSS
+    },
+    {
+        id: 15,
+        title: "Infosys HTML Certification",
+        description: "Earned HTML certification through Infosys web development fundamentals",
+        year: "2022",
+        category: "Certification",
+        image: CERT_INFOSYS_HTML
+    },
+    {
+        id: 16,
+        title: "Java Programming Certification",
+        description: "Certified in Java programming language with comprehensive development skills",
+        year: "2022",
+        category: "Certification",
+        image: CERT_JAVA
+    },
+    {
+        id: 17,
+        title: "Data Science with Python",
+        description: "Completed Data Science certification using Python for data analysis and visualization",
+        year: "2022",
+        category: "Certification",
+        image: CERT_DATA_SCIENCE
+    },
+    {
+        id: 18,
+        title: "Machine Learning with R Studio",
+        description: "Achieved Machine Learning certification using R Studio for statistical analysis",
+        year: "2022",
+        category: "Certification",
+        image: CERT_MACHINE_LEARNING
+    },
+    {
+        id: 19,
+        title: "CSS, JS and PHP Certification",
+        description: "Certified in frontend technologies including CSS, JavaScript and PHP development",
+        year: "2022",
+        category: "Certification",
+        image: CERT_CSS_JS_PHP
+    },
+    {
+        id: 20,
+        title: "HTML5 and CSS3 Certification",
+        description: "Earned modern web standards certification in HTML5 and CSS3",
+        year: "2022",
+        category: "Certification",
+        image: CERT_HTML5_CSS3
+    },
+    {
+        id: 21,
+        title: "JavaScript Programming",
+        description: "Certified in JavaScript programming with advanced ES6+ features",
+        year: "2022",
+        category: "Certification",
+        image: CERT_JAVASCRIPT
+    },
+    {
+        id: 22,
+        title: "C, C++, Java and PHP",
+        description: "Multi-language certification covering C, C++, Java and PHP programming",
+        year: "2022",
+        category: "Certification",
+        image: CERT_C_CPP_JAVA_PHP
+    },
+    {
+        id: 23,
+        title: "MLSA GitHub Workshop",
+        description: "Completed Microsoft Learn Student Ambassador GitHub workshop",
+        year: "2022",
+        category: "Community",
+        image: CERT_MLSA
+    },
+    {
+        id: 24,
+        title: "Smart India Hackathon",
+        description: "Participated in Smart India Hackathon showcasing innovative problem-solving skills",
+        year: "2022",
+        category: "Competition",
+        image: CERT_SIH
+    },
+    {
+        id: 25,
+        title: "Typing Certification",
+        description: "Achieved typing certification demonstrating fast and accurate keyboard skills",
+        year: "2022",
+        category: "Certification",
+        image: CERT_TYPING
+    },
+    {
+        id: 26,
+        title: "AWS Virtual Internship",
+        description: "Completed AWS Virtual Internship program with hands-on cloud computing experience",
+        year: "2022",
+        category: "Certification",
+        image: CERT_AWS
+    },
+    {
+        id: 27,
+        title: "Deloitte Virtual Internship",
+        description: "Successfully completed Deloitte's virtual internship program in technology consulting",
+        year: "2022",
+        category: "Certification",
+        image: CERT_DELOITTE
+    },
+    {
+        id: 28,
+        title: "Infosys Frontend Developer",
+        description: "Certified as Frontend Web Developer through Infosys training program",
+        year: "2022",
+        category: "Certification",
+        image: CERT_INFOSYS
+    },
+    {
+        id: 29,
+        title: "React.js Certification",
+        description: "Achieved React.js certification demonstrating advanced frontend development skills",
+        year: "2022",
+        category: "Certification",
+        image: CERT_REACT
+    },
+    {
+        id: 30,
+        title: "LeetCode 365 Days Challenge",
+        description: "Completed LeetCode's 365-day coding challenge demonstrating consistent problem-solving dedication",
+        year: "2023",
+        category: "Competition",
+        image: CERT_LEETCODE
+    },
+    {
+        id: 31,
+        title: "Super-50 Member",
+        description: "Selected as Super-50 member for exceptional performance and leadership in technical community",
+        year: "2023",
+        category: "Leadership",
+        image: CERT_SUPER50
+    },
+    {
+        id: 32,
+        title: "#1 in Sistec on Codolio",
+        description: "Achieved top ranking in Sistec on Codolio platform showcasing coding excellence",
+        year: "2023",
+        category: "Competition",
+        image: CERT_CODOLIO
+    },
+    {
+        id: 33,
+        title: "AI Prompt Combat Organizer",
+        description: "Successfully organized AI Prompt Combat event demonstrating event management skills",
+        year: "2023",
+        category: "Leadership",
+        image: CERT_AI_COMBAT
+    },
+    {
+        id: 34,
+        title: "Gen AI Felicitation",
+        description: "Recognized and felicitated for contributions to Generative AI initiatives and projects",
+        year: "2023",
+        category: "Recognition",
+        image: CERT_GEN_AI
+    },
+    {
+        id: 35,
+        title: "Freshers Organizer",
+        description: "Led and organized freshers events showcasing strong organizational and leadership abilities",
+        year: "2023",
+        category: "Leadership",
+        image: CERT_FRESHERS
+    },
+    {
+        id: 36,
+        title: "Apply AI: Analyze Customer Reviews",
+        description: "Completed Apply AI course on analyzing customer reviews using AI techniques",
+        year: "2025",
+        category: "Certification",
+        image: CERT_APPLY_AI_1
+    },
+    {
+        id: 37,
+        title: "Apply AI: Analyze Customer Reviews (Certificate)",
+        description: "Achieved certification in Apply AI program for customer review analysis",
+        year: "2025",
+        category: "Certification",
+        image: CERT_APPLY_AI_2
+    },
+    {
+        id: 38,
+        title: "GSA Completion",
+        description: "Successfully completed GSA program demonstrating commitment to professional development",
+        year: "2025",
+        category: "Certification",
+        image: CERT_GSA
+    },
+    {
+        id: 39,
+        title: "Introduction to Modern AI",
+        description: "Completed Introduction to Modern AI course covering fundamental AI concepts and applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_INTRO_MODERN_AI_1
+    },
+    {
+        id: 40,
+        title: "Introduction to Modern AI (Updated)",
+        description: "Completed updated Introduction to Modern AI program with latest AI technologies",
+        year: "2025",
+        category: "Certification",
+        image: CERT_INTRO_MODERN_AI_2
+    },
+    {
+        id: 41,
+        title: "JP Morgan Certification",
+        description: "Completed JP Morgan professional development program",
+        year: "2025",
+        category: "Certification",
+        image: CERT_JP_MORGAN
+    },
+    {
+        id: 42,
+        title: "Problem Solving through Programming in C",
+        description: "Achieved certification in problem-solving using C programming language",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PROBLEM_SOLVING_C
+    },
+    {
+        id: 43,
+        title: "Python Cisco Certification",
+        description: "Completed Cisco Python programming certification demonstrating networking and programming skills",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_CISCO_1
+    },
+    {
+        id: 44,
+        title: "Python Cisco Certification (Advanced)",
+        description: "Achieved advanced Python Cisco certification for advanced networking applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_CISCO_2
+    },
+    {
+        id: 45,
+        title: "Python Essentials 2",
+        description: "Completed Python Essentials 2 course covering advanced Python programming concepts",
+        year: "2025",
+        category: "Certification",
+        image: CERT_PYTHON_ESSENTIALS_2
+    },
+    {
+        id: 46,
+        title: "The Joy of Computing using Python",
+        description: "Completed The Joy of Computing course exploring Python programming fundamentals and applications",
+        year: "2025",
+        category: "Certification",
+        image: CERT_JOY_COMPUTING_PYTHON
+    }
+];

@@ -2,9 +2,13 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { Award, Trophy, Star, Medal } from "lucide-react";
 
+import PdfCertificatePreview from "../PdfCertificatePreview";
 import { useTheme } from "../../context/ThemeContext";
-import { ACHIEVEMENTS, BADGES } from "../../utils/data";
+import { ACHIEVEMENTS, BADGES } from "../../utils/achievementsData";
 import { containerVariants, itemVariants } from "../../utils/helper";
+
+const isPdfUrl = (src) =>
+  typeof src === "string" && /\.pdf(\?|$)/i.test(src);
 
 const AchievementSection = () => {
   const { isDarkMode } = useTheme();
@@ -14,13 +18,18 @@ const AchievementSection = () => {
   const [hoveredCardId, setHoveredCardId] = useState(null);
   const [isAnimating, setIsAnimating] = useState(true);
   const [selectedPlatform, setSelectedPlatform] = useState("leetcode");
+  const [useHoverDim, setUseHoverDim] = useState(false);
 
-  // Create seamless loop by duplicating achievements multiple times
-  const duplicatedAchievements = [
-    ...ACHIEVEMENTS,
-    ...ACHIEVEMENTS,
-    ...ACHIEVEMENTS,
-  ];
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const apply = () => setUseHoverDim(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
+  // Two copies match translateX(-50%) seamless marquee in CSS
+  const duplicatedAchievements = [...ACHIEVEMENTS, ...ACHIEVEMENTS];
 
   // Pause animation only when hovering on cards, not the entire section
   useEffect(() => {
@@ -132,20 +141,43 @@ const AchievementSection = () => {
           variants={containerVariants}
           className="relative"
         >
-          <div className="overflow-x-auto overflow-y-hidden px-16">
+          <div
+            className={`relative overflow-hidden rounded-2xl border shadow-inner ${
+              isDarkMode
+                ? "border-gray-700/90 bg-gray-950/60 shadow-black/40 ring-1 ring-white/5"
+                : "border-gray-200/90 bg-gradient-to-b from-gray-50 to-gray-100/80 shadow-gray-900/5 ring-1 ring-gray-900/5"
+            }`}
+          >
+            <div
+              className={`pointer-events-none absolute inset-y-0 left-0 z-[1] w-10 bg-gradient-to-r sm:w-14 ${
+                isDarkMode ? "from-gray-900" : "from-white"
+              } to-transparent`}
+              aria-hidden
+            />
+            <div
+              className={`pointer-events-none absolute inset-y-0 right-0 z-[1] w-10 bg-gradient-to-l sm:w-14 ${
+                isDarkMode ? "from-gray-900" : "from-white"
+              } to-transparent`}
+              aria-hidden
+            />
             <div
               ref={scrollContainerRef}
-              className={`flex gap-6 smooth-scroll animate-scroll-horizontal ${
-                !isAnimating ? "paused" : ""
+              className={`achievement-carousel-track overflow-x-auto overflow-y-hidden px-4 py-4 sm:px-6 sm:py-5 md:px-8 ${
+                isDarkMode
+                  ? "achievement-carousel-track--dark"
+                  : "achievement-carousel-track--light"
               }`}
-              style={{
-                animationDuration: "200s",
-                animationIterationCount: "infinite",
-                animationTimingFunction: "linear",
-                width: "max-content",
-                minWidth: "100%",
-              }}
             >
+              <div
+                className={`flex w-max min-w-full gap-6 animate-scroll-horizontal ${
+                  !isAnimating ? "paused" : ""
+                }`}
+                style={{
+                  animationDuration: "200s",
+                  animationIterationCount: "infinite",
+                  animationTimingFunction: "linear",
+                }}
+              >
               {duplicatedAchievements.map((achievement, index) => {
                 const IconComponent = getCategoryIcon(achievement.category);
                 const isCardHovered =
@@ -159,36 +191,37 @@ const AchievementSection = () => {
                       setHoveredCardId(`${achievement.id}-${index}`)
                     }
                     onMouseLeave={() => setHoveredCardId(null)}
-                    className={`flex-shrink-0 w-80 ${
+                    className={`w-80 flex-shrink-0 ${
                       isDarkMode
-                        ? "bg-gray-800/50 border-gray-700 hover:bg-gray-700/70"
-                        : "bg-gray-50 border-gray-200 hover:bg-gray-100"
+                        ? "border-gray-700 bg-gray-800/50 hover:bg-gray-700/70"
+                        : "border-gray-200 bg-gray-50 hover:bg-gray-100"
                     } rounded-xl border p-6 transition-all duration-500 hover:scale-105 hover:shadow-lg ${
-                      hoveredCardId && !isCardHovered
+                      useHoverDim && hoveredCardId && !isCardHovered
                         ? "blur-sm opacity-60"
                         : ""
                     }`}
                     style={{
                       filter:
-                        hoveredCardId && !isCardHovered ? "blur(4px)" : "none",
+                        useHoverDim && hoveredCardId && !isCardHovered
+                          ? "blur(4px)"
+                          : "none",
                     }}
                   >
                     {/* Achievement Image */}
                     <div className="mb-4 overflow-hidden rounded-lg">
-                      {achievement.image.endsWith(".pdf") ? (
-                        <div className="w-full h-48">
-                          <iframe
-                            src={achievement.image}
-                            className="w-full h-full border-0 rounded-lg"
-                            title={achievement.title}
-                            style={{ pointerEvents: "none" }}
-                          />
-                        </div>
+                      {isPdfUrl(achievement.image) ? (
+                        <PdfCertificatePreview
+                          src={achievement.image}
+                          title={achievement.title}
+                          isDarkMode={isDarkMode}
+                        />
                       ) : (
                         <img
                           src={achievement.image}
                           alt={achievement.title}
-                          className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                          loading="lazy"
+                          decoding="async"
+                          className="h-48 w-full object-cover transition-transform duration-300 hover:scale-110"
                         />
                       )}
                     </div>
@@ -238,6 +271,7 @@ const AchievementSection = () => {
                   </motion.div>
                 );
               })}
+              </div>
             </div>
           </div>
         </motion.div>
@@ -353,7 +387,9 @@ const AchievementSection = () => {
                     <img
                       src={badge.image}
                       alt={badge.name}
-                      className="w-20 h-20 mx-auto mb-3 object-contain"
+                      loading="lazy"
+                      decoding="async"
+                      className="mx-auto mb-3 h-20 w-20 object-contain"
                     />
                     <h4 className="text-sm font-medium mb-1 line-clamp-2">
                       {badge.name}

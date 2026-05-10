@@ -112,10 +112,12 @@ const HeroSection = () => {
                             isDarkMode ? "border-gray-800":"border-gray-300"
                         } shadow-2xl`}
                         >
-                            <img 
+                            <img
                             src={PROFILE_PIC}
                             alt="Profile"
-                            className="w-full h-full object-cover"
+                            fetchPriority="high"
+                            decoding="async"
+                            className="h-full w-full object-cover"
                             />
                         </motion.div>
                         {/*Decorative ring*/}
@@ -382,7 +384,9 @@ className="flex justify-center lg:justify-end"
             <img
             src={PROFILE_PIC}
             alt="Profile"
-            className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
             />
         </motion.div>
         {/*Decorative Elements */}

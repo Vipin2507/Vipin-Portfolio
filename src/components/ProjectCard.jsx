@@ -37,7 +37,9 @@ ease:"easeOut",
             <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
+            className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
             {/*Featured Badge */}
