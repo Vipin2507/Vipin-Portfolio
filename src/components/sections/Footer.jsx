@@ -17,19 +17,19 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: FiGithub,
-      url: "https://github.com",
+      url: "https://github.com/Vipin2507",
       color: "hover:text-gray-400",
     },
     {
       name: "LinkedIn",
       icon: FiLinkedin,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/vipintomar2507/",
       color: "hover:text-blue-400",
     },
     {
       name: "Twitter",
       icon: FiTwitter,
-      url: "https://twitter.com",
+      url: "https://x.com/vipintomar25?s=21",
       color: "hover:text-sky-400",
     },
     {
